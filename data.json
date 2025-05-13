@@ -3,7 +3,7 @@
   "data":[
     {
       "jenis":"kuota",
-      "provider":"./xl.png",
+      "provider":"https://i.postimg.cc/hhW57fSN/xl.png",
       "harga":"25.000",
       "nama":"Xtra Unlimited Turbo Super",
       "deskripsi":"Kuota tanpa batas dengan kecepatan maksimal",
@@ -24,7 +24,7 @@
     },
     {
       "jenis":"masa aktif",
-      "provider":"./axis.png",
+      "provider":"https://i.postimg.cc/3Rq6Ytz8/axis.png",
       "harga":"25.000",
       "nama":"Tambah Masa Aktif AXIS",
       "deskripsi":"Memperpanjang masa aktif nomor AXIS",
@@ -33,7 +33,7 @@
     },
     {
       "jenis":"masa aktif",
-      "provider":"./tri.png",
+      "provider":"https://i.postimg.cc/sX2dVQXc/tri.png",
       "harga":"30.000",
       "nama":"Tambah Masa Aktif Tri",
       "deskripsi":"Memperpanjang masa aktif nomor Tri",
@@ -42,7 +42,7 @@
     },
     {
       "jenis":"masa aktif",
-      "provider":"./xl.png",
+      "provider":"https://i.postimg.cc/hhW57fSN/xl.png",
       "harga":"20.000",
       "nama":"Tambah Masa Aktif XL",
       "deskripsi":"Memperpanjang masa aktif nomor XL",
