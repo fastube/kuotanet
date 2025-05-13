@@ -729,6 +729,9 @@
    .m-nav-modal--container.a{
      display: none;
    }
+   .navigation.is--expanded ~.outter--container .sidepanel--content>div:first-child.a{
+     left: 240px;
+   }
  }
  .sidepanel--content{
      margin-right:330px;
@@ -817,7 +820,7 @@
      .outter--container .load,.sidepanel--content>div:first-child.a{
          right: 330px;
     }
-     .navigation.is--expanded ~.outter--container .load, .navigation.is--expanded ~.outter--container .sidepanel--content>div:first-child.a {
+     .navigation.is--expanded ~.outter--container .load {
          left: 240px;
     }
      aside.navigation .sidepanel--toggle,.sidepanel--toggleback{

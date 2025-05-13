@@ -339,7 +339,7 @@ _navViewMore && _navViewMore.addEventListener("click", (() => {
       <div class="modal m-nav-modal--container a">
         <div class="m-nav-modal">
           <div class="flex justify-between align-center m-10-b">
-            <div class="text-biggest ya-title">Navigation</div>
+            <div class="text-biggest ya-title">Navigasi</div>
             <div class="m-nav-close">
               ×
             </div>
