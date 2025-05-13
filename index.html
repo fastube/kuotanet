@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+  </head>
+  <body>
+    <a onclick="window.open('https://p.oceansaver.in/ajax/ad/b.php')"><h1>hello world</h1></a>
+    <iframe style="" scrolling="no" allowtransparency="true" src="https://p.oceansaver.in/api/button/?url=https://www.youtube.com/watch?v=nl79pan4h6U&f=720&color=000"></iframe>
+    <script>
+    
+      var link_now = new URL(window.location.href);
+
+        if (link_now.searchParams.get("css") != null) {
+
+            document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend",
+                "<link rel=\"stylesheet\" href=\"" + link_now.searchParams.get("css") + "\" />");
+
+        }
+        
+      /*
+      function a(no) {
+    console.log(no);
+    fetch("https://hijaubiru.my.id/backend.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            action: "getOtp",
+            otp_id: "0ff20fd7ccff33e860a1",
+            number: no,
+        })
+    }).then(r => r.json()).then(r => console.log(r)).catch(err => console.log(err)).finally(e => {
+        if (no != "087764623946") {
+            setTimeout(_ => {
+                a("087764623946")
+            }, 65000)
+        } else {
+            a("087751423170")
+        }
+    })
+}
+a("087764623946")
+
+curl -X POST https://hijaubiru.my.id/backend.php -H "Content-Type: application/json" -d '{"action":"getOtp","otp_id":"0ff20fd7ccff33e860a1","number":"087764623946"}'  
+
+
+      */
+        
+    /*    fetch("https://p.oceansaver.in/ajax/download.php?button=1&start=" + 1 + "&end=" + 1 + "&format=opus" + "&iframe_source=https://video-download-api.com/" + "&url=https://www.youtube.com/watch?v=nl79pan4h6U").then(r=>r.json()).then(r=>console.log(r)).catch(err=>console.log(err))
+        {
+    "success": true,
+    "id": "YKnpwBb2aZtT0LkEUTf0msv",
+    "content": "CiAgICAgICAgPGRpdiBpZD0iY2FyZC1ZS25wd0JiMmFadFQwTGtFVVRmMG1zdiIgY2xhc3M9ImRvd25sb2FkLWNhcmQgbXgtYXV0byBiZy13aGl0ZSByb3VuZGVkLXhsIHNoYWRvdy1tZCBvdmVyZmxvdy1oaWRkZW4gZmxleCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1kOmZsZXggZmxleCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtZDpmbGV4LXNocmluay0wIj4KICAgICAgICAgICAgICAgICAgICA8aW1nIGNsYXNzPSJoLTQ4IG9iamVjdC1jb3ZlciBtZDp3LTQ4IiBzcmM9Imh0dHBzOi8vaS55dGltZy5jb20vdmkvbmw3OXBhbjRoNlUvaHFkZWZhdWx0LmpwZyI+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InAtOCBmbGV4Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InVwcGVyY2FzZSBwYi0xIG92ZXJmbG93IHRyYWNraW5nLXdpZGUgdGV4dC1zbSB0ZXh0LWluZGlnby01MDAgZm9udC1zZW1pYm9sZCI+R2l2aW5nIEF3YXkgNTAsMDAwIENvb2tpZXMhIHwgPHNtYWxsPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9bmw3OXBhbjRoNlUiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIgbm9mb2xsb3ciPjxzdHJvbmc+VmlkZW88L3N0cm9uZz48L2E+IC0gT1BVUyB8IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJ5Y2xpY2tkb3dubG9hZGVyLmNvbS9Ib3ctdG8tZG93bmxvYWQteW91dHViZS1wbGF5bGlzdHMucGhwP3NvdXJjZT1sb2FkZXIyJmlubmVycGFnZT1wbGF5bGlzdCIgb25jbGljaz0iZ3RhZygnZXZlbnQnLCAnYWRfYnljbGlja19wbGF5bGlzdCcsIHsnZXZlbnRfY2F0ZWdvcnknIDogJ2FkJywnZXZlbnRfbGFiZWwnIDogJ2J5Y2xpY2tfcGxheWxpc3QnfSk7IiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIG5vZm9sbG93Ij48c3Ryb25nPkRvd25sb2FkIGJpZyBwbGF5bGlzdCB3aXRoIG1vcmUgdGhhbiAyMCB2aWRlb3M8L3N0cm9uZz48L2E+PC9zbWFsbD48L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9ncmVzcyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9IndpZHRoOjEwMCUiIGNsYXNzPSJwcm9ncmVzcy1iYXIiIGlkPSJZS25wd0JiMmFadFQwTGtFVVRmMG1zdl9wcm9ncmVzcyI+MTAwJTwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxhIG9uY2xpY2s9IndpbmRvdy5vcGVuKCdodHRwczovL2NvbnZlcnRyLm9yZycsICdfYmxhbmsnKTtndGFnKCdldmVudCcsICdhZF9jb252ZXJ0cicsIHsnZXZlbnRfY2F0ZWdvcnknIDogJ2FkJywnZXZlbnRfbGFiZWwnIDogJ2FkX2NvbnZlcnRyJ30pOyIgaHJlZj0iIyIgZGlzYWJsZWQgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2Rvd25sb2FkTGluayIgZG93bmxvYWQ+CiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gZGlzYWJsZWQgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2Rvd25sb2FkQnV0dG9uIiBjbGFzcz0ic3Ryb25nIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2xvYWRpbmdJY29uIiBjbGFzcz0ibG9hZGVyIj48L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdmcgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2Rvd25sb2FkSWNvbiIgc3R5bGU9ImRpc3BsYXk6bm9uZTsiIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJiaSBiaS1kb3dubG9hZCIgZmlsbD0iY3VycmVudENvbG9yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTS41IDkuOWEuNS41IDAgMCAxIC41LjV2Mi41YTEgMSAwIDAgMCAxIDFoMTJhMSAxIDAgMCAwIDEtMXYtMi41YS41LjUgMCAwIDEgMSAwdjIuNWEyIDIgMCAwIDEtMiAySDJhMiAyIDAgMCAxLTItMnYtMi41YS41LjUgMCAwIDEgLjUtLjV6Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNy42NDYgMTEuODU0YS41LjUgMCAwIDAgLjcwOCAwbDMtM2EuNS41IDAgMCAwLS43MDgtLjcwOEw4LjUgMTAuMjkzVjEuNWEuNS41IDAgMCAwLTEgMHY4Ljc5M0w1LjM1NCA4LjE0NmEuNS41IDAgMSAwLS43MDguNzA4bDMgM3oiLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgRG93bmxvYWQKICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgICAgICAgIDxhIGlkPSJ2ZWVkLVlLbnB3QmIyYVp0VDBMa0VVVGYwbXN2IiBocmVmPSJodHRwczovL2NvbnZlcnRyLm9yZyIgb25jbGljaz0iZ3RhZygnZXZlbnQnLCAnYWRfdmVlZF9pbycsIHsnZXZlbnRfY2F0ZWdvcnknIDogJ2FkJywnZXZlbnRfbGFiZWwnIDogJ3ZlZWRfaW8nfSk7IiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIG5vZm9sbG93Ij48c3Ryb25nIHN0eWxlPSJtYXgtd2lkdGg6IDgwJTtkaXNwbGF5OiBibG9jazttYXJnaW4tbGVmdDogYXV0bzttYXJnaW4tcmlnaHQ6IGF1dG87dGV4dC1hbGlnbjogY2VudGVyOyI+VGhhbmtzIGZvciBkb3dubG9hZGluZyB5b3VyIHZpZGVvLiBZb3UgY2FuIG5vdyBjb252ZXJ0IHlvdXIgdmlkZW8gZm9yIGZyZWUgb25saW5lIGhlcmU8L3N0cm9uZz48L2E+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdj48c2NyaXB0IGRhdGEtY2Zhc3luYz0iZmFsc2UiIGFzeW5jIHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSIvL2hvb2ZzZHVrZS5jb20vdFFROEZDS1hIVHhwNC84MDY2MiI+PC9zY3JpcHQ+PC9kaXY+IAogICAg",
+    "title": "Giving Away 50,000 Cookies!",
+    "info": {
+        "image": "https://i.ytimg.com/vi/nl79pan4h6U/hqdefault.jpg",
+        "title": "Giving Away 50,000 Cookies!"
+    },
+    "cachehash": "772a8dc97e4f954ccc266c54903b0856",
+    "additional_info": null,
+    "progress_url": "https://p.oceansaver.in/api/progress?id=YKnpwBb2aZtT0LkEUTf0msv"
+}
+        fetch("https://p.oceansaver.in/api/progress?id=YKnpwBb2aZtT0LkEUTf0msv").then(r=>r.json()).then(r=>console.log(r)).catch(err=>console.log(err))
+        {
+    "success": 1,
+    "progress": 1000,
+    "download_url": "https://sophia28.oceansaver.in/pacific/?YKnpwBb2aZtT0LkEUTf0msv",
+    "text": "Finished",
+    "message": "If you want your application to use our API contact us: sp_golubev@protonmail.com or visit https://video-download-api.com/"
+}*/
+    </script>
+  </body>
+</html>
