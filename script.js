@@ -322,17 +322,13 @@ const _header = document.querySelector("header"),
    _navViewMore = document.querySelector(".nav-item-more")
 
 _asideBurger && _asideBurger.addEventListener("click", ((e) => {
-
-
    if (e.isTrusted) {
       localStorage.getItem("side-nav") ? localStorage.removeItem("side-nav") : localStorage.setItem("side-nav", 1)
    }
-
    _asideNav.classList.toggle("is--expanded")
-
-
 }));
-localStorage.getItem("side-nav") ? 0 : _asideBurger.click();
+
+localStorage.getItem("side-nav") ? _asideBurger.click():0;
 
 _navViewMore && _navViewMore.addEventListener("click", (() => {
    document.body.insertAdjacentHTML("beforeend", `
