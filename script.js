@@ -442,6 +442,7 @@ document.querySelectorAll(".navigation button").forEach((e, i) => {
       } else if (!this.getAttribute("data-selected") && !this.classList.contains("sidepanel--toggle")) {
          delete document.querySelector(".nav-item[data-selected]").dataset.selected;
          this.dataset.selected = "";
+         document.querySelector(".outter--container").scrollTop = 0;
          document.querySelector(".sidepanel--content>div.a").classList.remove("a");
          document.querySelectorAll(".sidepanel--content>div")[i].classList.add("a");
       }
