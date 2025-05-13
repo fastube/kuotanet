@@ -71,7 +71,11 @@ fetch("https://raw.githubusercontent.com/fastube/data/refs/heads/main/kuotanet.j
           `;
 
     })
-}).catch(r=>alert("Gagal memuat data"));
+}).catch(r=>{
+  confirm("Gagal memuat data. Periksa koneksi anda!\nMuat ulang sekarang?")?window.location.reload():0;
+  document.querySelector(".sidepanel--content>div:nth-child(2)").innerHTML = "";
+  document.querySelector(".sidepanel--content>div:nth-child(3)").innerHTML = "";
+});
 
 let inval;
 
