@@ -6,7 +6,7 @@ let navClose;
 let resend;
 
 let waAdmin;
-fetch("https://raw.githubusercontent.com/fastube/kuotanet/refs/heads/main/data.json?v=" + new Date().getTime()).then(r => r.json()).then(r => {
+fetch("https://raw.githubusercontent.com/fastube/data/refs/heads/main/kuotanet.json?v=" + new Date().getTime()).then(r => r.json()).then(r => {
     document.querySelector(".sidepanel--content>div:nth-child(2)").innerHTML = "";
     document.querySelector(".sidepanel--content>div:nth-child(3)").innerHTML = "";
     waAdmin = r.waAdmin;

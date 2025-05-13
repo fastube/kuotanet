@@ -1,77 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
+    <title>KuotaNet.</title>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="kuota murah, paket murah, kuota internet murah, paket internet murah">
+    <meta name="title" content="KuotaNet.">
+    <meta name="description" content="Kuota Internet Murah">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="KuotaNet.">
+    <meta property="og:title" content="KuotaNet.">
+    <meta property="og:description" content="Kuota Internet Murah">
+    <meta property="og:image" content="">
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/pd23ZhDH/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/pd23ZhDH/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i.postimg.cc/pd23ZhDH/icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json">
   </head>
   <body>
-    <a onclick="window.open('https://p.oceansaver.in/ajax/ad/b.php')"><h1>hello world</h1></a>
-    <iframe style="" scrolling="no" allowtransparency="true" src="https://p.oceansaver.in/api/button/?url=https://www.youtube.com/watch?v=nl79pan4h6U&f=720&color=000"></iframe>
+    <header>
+      <div class="header--container">
+        <div id="start" class="header--start">
+          <div class="header--burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <a href="" class="header--logo">
+            <h2>KuotaNet.</h2>
+          </a>
+        </div>
+        <div id="center" class="header--center">
+          <div class="search--container">
+            <form class="search" action="/discover/" method="GET">
+              <button type="button" name="search-back" class="main-input-back"></button>
+              <input id="main-search" type="text" placeholder="Pencarian" name="q" autocomplete="off" minlength="1" class="main-input-box" required>
+              <button type="submit" class="main-input-submit searchbtn">
+                <svg style="width:22px;height:22px" viewBox="0 0 24 24">
+                  <path fill="" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div id="end" class="header--end">
+          <div class="header--icons">
+            <a aria-label="Dark Mode" class="darkmode-toggle" href="#" role="button"></a>
+          </div>
+          <div class="header--icons">
+            <button type="button" name="search" aria-label="Search" class="header--button search"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="navigation navigation-compact">
+      <button class="nav-item" data-selected>
+        <svg viewBox="0 0 24 24">
+          <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+        </svg>
+        Beranda
+      </button>
+      <button class="nav-item">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64"/>
+        </svg>
+        Paket Data
+      </button>
+      <div class="nav-item nav-item-more" title="View More">
+        <svg style="width:24px;height:24px;margin:0;" viewBox="0 0 24 24">
+          <path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/>
+        </svg>
+      </div>
+      <button class="nav-item">
+        <svg viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg">
+          <path d="M352 159.872V230.4a352 352 0 10320 0v-70.528A416.128 416.128 0 01512 960a416 416 0 01-160-800.128z"/>
+          <path d="M512 64q32 0 32 32v320q0 32-32 32t-32-32V96q0-32 32-32z"/>
+        </svg>
+        Masa Aktif
+      </button>
+      <button class="nav-item">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path d="M15.5,12C18,12 20,14 20,16.5C20,17.38 19.75,18.2 19.31,18.9L22.39,22L21,23.39L17.88,20.32C17.19,20.75 16.37,21 15.5,21C13,21 11,19 11,16.5C11,14 13,12 15.5,12M15.5,14A2.5,2.5 0 0,0 13,16.5A2.5,2.5 0 0,0 15.5,19A2.5,2.5 0 0,0 18,16.5A2.5,2.5 0 0,0 15.5,14M19.5,2A0.5,0.5 0 0,1 20,2.5V11.81C19.42,11.26 18.75,10.81 18,10.5V4.7L15,5.86V10C14.3,10.07 13.62,10.24 13,10.5V5.87L9,4.47V16.13H9V16.5C9,17.14 9.09,17.76 9.26,18.34L8,17.9L2.66,19.97L2.5,20A0.5,0.5 0 0,1 2,19.5V4.38C2,4.15 2.15,3.97 2.36,3.9L8,2L14,4.1L19.34,2.03L19.5,2M4,5.46V17.31L7,16.15V4.45L4,5.46Z"/>
+        </svg>
+        Cek Nomor
+      </button>
+      <button class="nav-item sidepanel--toggle">
+        <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>about</title>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="about-white" transform="translate(42.666667, 42.666667)">
+              <path d="M213.333333,3.55271368e-14 C95.51296,3.55271368e-14 3.55271368e-14,95.51168 3.55271368e-14,213.333333 C3.55271368e-14,331.153707 95.51296,426.666667 213.333333,426.666667 C331.154987,426.666667 426.666667,331.153707 426.666667,213.333333 C426.666667,95.51168 331.154987,3.55271368e-14 213.333333,3.55271368e-14 Z M213.333333,384 C119.227947,384 42.6666667,307.43872 42.6666667,213.333333 C42.6666667,119.227947 119.227947,42.6666667 213.333333,42.6666667 C307.44,42.6666667 384,119.227947 384,213.333333 C384,307.43872 307.44,384 213.333333,384 Z M240.04672,128 C240.04672,143.46752 228.785067,154.666667 213.55008,154.666667 C197.698773,154.666667 186.713387,143.46752 186.713387,127.704107 C186.713387,112.5536 197.99616,101.333333 213.55008,101.333333 C228.785067,101.333333 240.04672,112.5536 240.04672,128 Z M192.04672,192 L234.713387,192 L234.713387,320 L192.04672,320 L192.04672,192 Z" id="Shape"></path>
+            </g>
+          </g>
+        </svg>
+        Tentang
+      </button>
+      <button type="button" class="nav-item wa-admin a">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"/>
+          <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"/>
+          <path d="M12.5 9.49989C12.1672 8.83131 11.6565 8.8905 11.1407 8.8905C10.2188 8.8905 8.78125 9.99478 8.78125 12.05C8.78125 13.7343 9.52345 15.578 12.0244 18.3361C14.438 20.9979 17.6094 22.3748 20.2422 22.3279C22.875 22.2811 23.4167 20.0154 23.4167 19.2503C23.4167 18.9112 23.2062 18.742 23.0613 18.696C22.1641 18.2654 20.5093 17.4631 20.1328 17.3124C19.7563 17.1617 19.5597 17.3656 19.4375 17.4765C19.0961 17.8018 18.4193 18.7608 18.1875 18.9765C17.9558 19.1922 17.6103 19.083 17.4665 19.0015C16.9374 18.7892 15.5029 18.1511 14.3595 17.0426C12.9453 15.6718 12.8623 15.2001 12.5959 14.7803C12.3828 14.4444 12.5392 14.2384 12.6172 14.1483C12.9219 13.7968 13.3426 13.254 13.5313 12.9843C13.7199 12.7145 13.5702 12.305 13.4803 12.05C13.0938 10.953 12.7663 10.0347 12.5 9.49989Z" fill="white"/>
+          <defs>
+            <linearGradient id="paint0_linear_87_7264" x1="26.5" y1="7" x2="4" y2="28" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5BD066"/>
+              <stop offset="1" stop-color="#27B43E"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        Chat Admin
+      </button>
+      <div class="watchlist--container">
+        <div class="nav--divider"></div>
+        <div class="watchlist--header">Watching</div>
+        <p class="watchlist--header">Sign in for the best YugenAnime experience.</p>
+      </div>
+    </aside>
+    <main class="outter--container">
+      <div class="inner--container">
+        <section>
+          <div class="sidepanel--content">
+            <div class="a">
+              <div>
+                <h1>Selamat Datang di KuotaNet.<br>Kuota Internet Murah!</h1>
+                <p>Kami menawarkan kuota internet terbaik untuk memenuhi kebutuhanmu sehari-hari.</p>
+              </div>
+            </div>
+            <div>
+              <div class="load"><span class="loader"></span></div>
+            </div>
+            <div>
+              <div class="load"><span class="loader"></span></div>
+            </div>
+            <div>
+              <span><img src="./xl.png" alt=""><img src="./axis.png" alt=""></span>
+              <h1>Menampilkan Informasi Nomor XL / AXIS</h1>
+              <hr class="line">
+              <form>
+                <label for="inp1">Masukkan nomor :</label>
+                <input id="inp1" name="no" class="main-input-box" type="number" placeholder="087XXXXX / 083XXXXX" minlength="11" required><br>
+                <button class="tampilbtn">Tampilkan</button>
+              </form>
+              <div class="hasil">
+              </div>
+            </div>
+          </div>
+          <div class="sidepanel--main-panel">
+            <div class="flex justify-between align-center m-15-b">
+              <h2 class="ya-title">Tentang Kami</h2>
+              <div class="sidepanel--toggleback">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-arrow-right"
+                  >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </div>
+            <br>
+            <p>Mau internetan puas tanpa takut kuota habis? Di sini tempatnya!</p>
+            <br>
+            <p>Kami tahu betapa pentingnya internet di zaman sekarang, buat kerja, belajar, hiburan, sampai stalking mantan! Di sini, kami hadir buat bantu kamu tetap online tanpa bikin kantong jebol.</p>
+            <br>
+            <p>Kami menyediakan kuota internet murah, cepat, dan terpercaya. Dengan proses transaksi dan pelayanan yang responsif, kami berkomitmen memberikan pengalaman terbaik untuk kebutuhan internet Anda kapan saja dan di mana saja.</p>
+            <br>
+            <p>Kami percaya, koneksi yang stabil dan terjangkau adalah fondasi kemajuan digital masyarakat Indonesia.</p>
+            <br>
+            <p>&copy; <span class="thn"></span> KoutaNet.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <a href="" target="_blank" class="new-tab"></a>
+    <script src="./script.js"></script>
     <script>
-    
-      var link_now = new URL(window.location.href);
-
-        if (link_now.searchParams.get("css") != null) {
-
-            document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend",
-                "<link rel=\"stylesheet\" href=\"" + link_now.searchParams.get("css") + "\" />");
-
-        }
-        
-      /*
-      function a(no) {
-    console.log(no);
-    fetch("https://hijaubiru.my.id/backend.php", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            action: "getOtp",
-            otp_id: "0ff20fd7ccff33e860a1",
-            number: no,
-        })
-    }).then(r => r.json()).then(r => console.log(r)).catch(err => console.log(err)).finally(e => {
-        if (no != "087764623946") {
-            setTimeout(_ => {
-                a("087764623946")
-            }, 65000)
-        } else {
-            a("087751423170")
-        }
-    })
-}
-a("087764623946")
-
-curl -X POST https://hijaubiru.my.id/backend.php -H "Content-Type: application/json" -d '{"action":"getOtp","otp_id":"0ff20fd7ccff33e860a1","number":"087764623946"}'  
-
-
-      */
-        
-    /*    fetch("https://p.oceansaver.in/ajax/download.php?button=1&start=" + 1 + "&end=" + 1 + "&format=opus" + "&iframe_source=https://video-download-api.com/" + "&url=https://www.youtube.com/watch?v=nl79pan4h6U").then(r=>r.json()).then(r=>console.log(r)).catch(err=>console.log(err))
-        {
-    "success": true,
-    "id": "YKnpwBb2aZtT0LkEUTf0msv",
-    "content": "CiAgICAgICAgPGRpdiBpZD0iY2FyZC1ZS25wd0JiMmFadFQwTGtFVVRmMG1zdiIgY2xhc3M9ImRvd25sb2FkLWNhcmQgbXgtYXV0byBiZy13aGl0ZSByb3VuZGVkLXhsIHNoYWRvdy1tZCBvdmVyZmxvdy1oaWRkZW4gZmxleCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1kOmZsZXggZmxleCI+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtZDpmbGV4LXNocmluay0wIj4KICAgICAgICAgICAgICAgICAgICA8aW1nIGNsYXNzPSJoLTQ4IG9iamVjdC1jb3ZlciBtZDp3LTQ4IiBzcmM9Imh0dHBzOi8vaS55dGltZy5jb20vdmkvbmw3OXBhbjRoNlUvaHFkZWZhdWx0LmpwZyI+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InAtOCBmbGV4Ij4KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InVwcGVyY2FzZSBwYi0xIG92ZXJmbG93IHRyYWNraW5nLXdpZGUgdGV4dC1zbSB0ZXh0LWluZGlnby01MDAgZm9udC1zZW1pYm9sZCI+R2l2aW5nIEF3YXkgNTAsMDAwIENvb2tpZXMhIHwgPHNtYWxsPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9bmw3OXBhbjRoNlUiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIgbm9mb2xsb3ciPjxzdHJvbmc+VmlkZW88L3N0cm9uZz48L2E+IC0gT1BVUyB8IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmJ5Y2xpY2tkb3dubG9hZGVyLmNvbS9Ib3ctdG8tZG93bmxvYWQteW91dHViZS1wbGF5bGlzdHMucGhwP3NvdXJjZT1sb2FkZXIyJmlubmVycGFnZT1wbGF5bGlzdCIgb25jbGljaz0iZ3RhZygnZXZlbnQnLCAnYWRfYnljbGlja19wbGF5bGlzdCcsIHsnZXZlbnRfY2F0ZWdvcnknIDogJ2FkJywnZXZlbnRfbGFiZWwnIDogJ2J5Y2xpY2tfcGxheWxpc3QnfSk7IiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIG5vZm9sbG93Ij48c3Ryb25nPkRvd25sb2FkIGJpZyBwbGF5bGlzdCB3aXRoIG1vcmUgdGhhbiAyMCB2aWRlb3M8L3N0cm9uZz48L2E+PC9zbWFsbD48L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9ncmVzcyI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9IndpZHRoOjEwMCUiIGNsYXNzPSJwcm9ncmVzcy1iYXIiIGlkPSJZS25wd0JiMmFadFQwTGtFVVRmMG1zdl9wcm9ncmVzcyI+MTAwJTwvZGl2PgogICAgICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxhIG9uY2xpY2s9IndpbmRvdy5vcGVuKCdodHRwczovL2NvbnZlcnRyLm9yZycsICdfYmxhbmsnKTtndGFnKCdldmVudCcsICdhZF9jb252ZXJ0cicsIHsnZXZlbnRfY2F0ZWdvcnknIDogJ2FkJywnZXZlbnRfbGFiZWwnIDogJ2FkX2NvbnZlcnRyJ30pOyIgaHJlZj0iIyIgZGlzYWJsZWQgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2Rvd25sb2FkTGluayIgZG93bmxvYWQ+CiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gZGlzYWJsZWQgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2Rvd25sb2FkQnV0dG9uIiBjbGFzcz0ic3Ryb25nIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2xvYWRpbmdJY29uIiBjbGFzcz0ibG9hZGVyIj48L2Rpdj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdmcgaWQ9IllLbnB3QmIyYVp0VDBMa0VVVGYwbXN2X2Rvd25sb2FkSWNvbiIgc3R5bGU9ImRpc3BsYXk6bm9uZTsiIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJiaSBiaS1kb3dubG9hZCIgZmlsbD0iY3VycmVudENvbG9yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTS41IDkuOWEuNS41IDAgMCAxIC41LjV2Mi41YTEgMSAwIDAgMCAxIDFoMTJhMSAxIDAgMCAwIDEtMXYtMi41YS41LjUgMCAwIDEgMSAwdjIuNWEyIDIgMCAwIDEtMiAySDJhMiAyIDAgMCAxLTItMnYtMi41YS41LjUgMCAwIDEgLjUtLjV6Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNy42NDYgMTEuODU0YS41LjUgMCAwIDAgLjcwOCAwbDMtM2EuNS41IDAgMCAwLS43MDgtLjcwOEw4LjUgMTAuMjkzVjEuNWEuNS41IDAgMCAwLTEgMHY4Ljc5M0w1LjM1NCA4LjE0NmEuNS41IDAgMSAwLS43MDguNzA4bDMgM3oiLz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3ZnPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgRG93bmxvYWQKICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICAgICAgPC9hPgogICAgICAgICAgICAgICAgICAgIDxhIGlkPSJ2ZWVkLVlLbnB3QmIyYVp0VDBMa0VVVGYwbXN2IiBocmVmPSJodHRwczovL2NvbnZlcnRyLm9yZyIgb25jbGljaz0iZ3RhZygnZXZlbnQnLCAnYWRfdmVlZF9pbycsIHsnZXZlbnRfY2F0ZWdvcnknIDogJ2FkJywnZXZlbnRfbGFiZWwnIDogJ3ZlZWRfaW8nfSk7IiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIG5vZm9sbG93Ij48c3Ryb25nIHN0eWxlPSJtYXgtd2lkdGg6IDgwJTtkaXNwbGF5OiBibG9jazttYXJnaW4tbGVmdDogYXV0bzttYXJnaW4tcmlnaHQ6IGF1dG87dGV4dC1hbGlnbjogY2VudGVyOyI+VGhhbmtzIGZvciBkb3dubG9hZGluZyB5b3VyIHZpZGVvLiBZb3UgY2FuIG5vdyBjb252ZXJ0IHlvdXIgdmlkZW8gZm9yIGZyZWUgb25saW5lIGhlcmU8L3N0cm9uZz48L2E+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdj48c2NyaXB0IGRhdGEtY2Zhc3luYz0iZmFsc2UiIGFzeW5jIHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSIvL2hvb2ZzZHVrZS5jb20vdFFROEZDS1hIVHhwNC84MDY2MiI+PC9zY3JpcHQ+PC9kaXY+IAogICAg",
-    "title": "Giving Away 50,000 Cookies!",
-    "info": {
-        "image": "https://i.ytimg.com/vi/nl79pan4h6U/hqdefault.jpg",
-        "title": "Giving Away 50,000 Cookies!"
-    },
-    "cachehash": "772a8dc97e4f954ccc266c54903b0856",
-    "additional_info": null,
-    "progress_url": "https://p.oceansaver.in/api/progress?id=YKnpwBb2aZtT0LkEUTf0msv"
-}
-        fetch("https://p.oceansaver.in/api/progress?id=YKnpwBb2aZtT0LkEUTf0msv").then(r=>r.json()).then(r=>console.log(r)).catch(err=>console.log(err))
-        {
-    "success": 1,
-    "progress": 1000,
-    "download_url": "https://sophia28.oceansaver.in/pacific/?YKnpwBb2aZtT0LkEUTf0msv",
-    "text": "Finished",
-    "message": "If you want your application to use our API contact us: sp_golubev@protonmail.com or visit https://video-download-api.com/"
-}*/
+      document.querySelector(".thn").textContent = new Date().getFullYear();
+      async function registsw(){
+        if ("serviceWorker" in navigator) {
+          try {
+            const registration = await navigator.serviceWorker.register("./sw.js");
+            registration.active?0:registsw();
+          }catch(e){}
+        } 
+      }
+      registsw();
     </script>
   </body>
 </html>

@@ -1,0 +1,17 @@
+{
+  "name": "KuotaNet.",
+  "start_url": "./",
+  "display": "standalone",
+	"background_color": "#07bf67",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/pd23ZhDH/icon.png",
+      "type": "image/png",
+      "sizes": "48x48 72x72 96x96 144x144 192x192 256x256 512x512"
+    }
+  ],
+	"related_applications": [{
+    "platform": "webapp",
+    "url": "manifest.json"
+  }]
+}

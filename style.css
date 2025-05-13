@@ -1042,7 +1042,7 @@
      right: 100%;
      width: 1rem;
      padding-right: .2rem;
-     background-image: url("https://raw.githubusercontent.com/fastube/kuotanet/refs/heads/main/beli.svg");
+     background-image: url("./beli.svg");
      background-repeat: no-repeat;
 }
  .sidepanel--content>div:nth-child(4).a{
