@@ -336,7 +336,7 @@ localStorage.getItem("side-nav") ? _asideBurger.click():0;
 
 _navViewMore && _navViewMore.addEventListener("click", (() => {
    document.body.insertAdjacentHTML("beforeend", `
-      <div class="modal m-nav-modal--container">
+      <div class="modal m-nav-modal--container a">
         <div class="m-nav-modal">
           <div class="flex justify-between align-center m-10-b">
             <div class="text-biggest ya-title">Navigation</div>

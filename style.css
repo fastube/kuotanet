@@ -724,6 +724,12 @@
          padding: 10px;
     }
 }
+
+ @media (min-width: 768px) {
+   .m-nav-modal--container.a{
+     display: none;
+   }
+ }
  .sidepanel--content{
      margin-right:330px;
 }
