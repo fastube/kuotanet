@@ -70,7 +70,10 @@ fetch("https://raw.githubusercontent.com/fastube/data/refs/heads/main/kuotanet.j
             </div>
           `;
 
-    })
+    });
+    if(window.location.href.includes("#otp")){
+      beli();
+    }
 }).catch(r=>{
   confirm("Gagal memuat data. Periksa koneksi anda!\nMuat ulang sekarang?")?window.location.reload():0;
   document.querySelector(".sidepanel--content>div:nth-child(2)").innerHTML = "";
@@ -112,8 +115,9 @@ function beli(nama, provider) {
       e.preventDefault();
       if (loader.classList.contains("a")) {
          return;
-      }
-      if (!provider.includes("xl")) {
+      }else if(!nama){
+        input.value.length < 11 ? 0 : req_otp(input.value,2);
+      }else if(!provider.includes("xl")) {
          n();
          newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin + "&text=Halo%20Admin,%20Saya%20mau%20order%20nih!%0A%0APaket:%20" + nama + "%0ANomor%20Tujuan:%20" + input.value;
          setTimeout(_ => {
@@ -145,7 +149,10 @@ function beli(nama, provider) {
          setTimeout(killMobileNav = () => {
             e.remove(),
                clearTimeout(killMobileNav),
-               clearInterval(inval)
+               clearInterval(inval);
+               if(window.location.href.includes("#otp")){
+                 window.location.href = "."
+               }
          }, 290)
    };
 }
@@ -228,7 +235,7 @@ function req_otp(nomor, x) {
                clearInterval(inval);
                resend.textContent = "Kirim ulang OTP";
                resend.classList.toggle("a");
-               resend.querySelector(".a").onclick = _ => req_otp(nomor, 1);
+               document.querySelector(".resend.a").onclick = _ => req_otp(nomor, 1);
             }
          }, 1000);
       } else {
@@ -239,7 +246,7 @@ function req_otp(nomor, x) {
       console.log(r);
       alert(r)
    }).finally(_ => {
-      if (!x) {
+      if (x != 1) {
          yaTitle.textContent = "Masukkan kode OTP :";
          yaTitle.classList.toggle("a");
          input.placeholder = "";
@@ -274,7 +281,12 @@ function verif_otp(nomor, nama) {
          if (r.status) {
             navClose.classList.remove("a");
             navClose.click();
-            newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin + "&text=Halo%20Admin,%20Saya%20sudah%20OTP%20nih,%20mau%20order!%0A%0APaket:%20" + nama + "%0ANomor%20Tujuan:%20" + input.value;
+            alert("Verifikasi OTP Berhasil");
+            if(!nama){
+              newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin;
+            }else{
+              newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin + "&text=Halo%20Admin,%20Saya%20sudah%20OTP%20nih,%20mau%20order!%0A%0APaket:%20" + nama + "%0ANomor%20Tujuan:%20" + input.value;
+            }
             setTimeout(_ => {
                newTab.click();
             }, 10);
