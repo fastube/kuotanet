@@ -116,7 +116,7 @@ function beli(nama, provider) {
       if (loader.classList.contains("a")) {
          return;
       }else if(!nama){
-        input.value.length < 11 ? 0 : req_otp(input.value,2);
+        input.value.length < 6 ? 0 : req_otp(input.value,2);
       }else if(!provider.includes("xl")) {
          n();
          newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin + "&text=Halo%20Admin,%20Saya%20mau%20order%20nih!%0A%0APaket:%20" + nama + "%0ANomor%20Tujuan:%20" + input.value;
