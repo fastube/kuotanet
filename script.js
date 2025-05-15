@@ -115,7 +115,7 @@ function beli(nama, provider) {
       e.preventDefault();
       if (loader.classList.contains("a")) {
          return;
-      }else if(!nama){
+      }else if(!nama && !yaTitle.classList.contains("a")){
         input.value.length < 6 ? 0 : req_otp(input.value,2);
       }else if(!provider.includes("xl")) {
          n();
@@ -187,7 +187,7 @@ function cekotp(nomor, nama) {
          }
       } else {
          console.log(r);
-         alert(r);
+         r.message?alert(r.message):alert("OTP gagal, hubungi admin!");
          okbtn.classList.toggle("a");
          loader.classList.toggle("a");
          navClose.classList.toggle("a");
@@ -195,7 +195,7 @@ function cekotp(nomor, nama) {
       }
    }).catch(r => {
       console.log(r);
-      alert(r);
+      r.message?alert(r.message):alert("OTP gagal, hubungi admin!");
       okbtn.classList.toggle("a");
       loader.classList.toggle("a");
       navClose.classList.toggle("a");
@@ -240,11 +240,11 @@ function req_otp(nomor, x) {
          }, 1000);
       } else {
          console.log(r);
-         alert(r);
+         r.message?alert(r.message):alert("OTP gagal, hubungi admin!");
       }
    }).catch(r => {
       console.log(r);
-      alert(r)
+      r.message?alert(r.message):alert("OTP gagal, hubungi admin!");
    }).finally(_ => {
       if (x != 1) {
          yaTitle.textContent = "Masukkan kode OTP :";
@@ -267,21 +267,9 @@ function verif_otp(nomor, nama) {
    fetch('https://nomorxlku.my.id/api/ver_otp.php', {
       method: 'POST',
       headers: {
-        'Host': 'nomorxlku.my.id',
-        'Connection': 'keep-alive',
-        'Content-Length': '75',
-        'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
         'Accept': 'application/json, text/javascript, */*; q=0.01',
-        'sec-ch-ua-mobile': '?1',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36',
-        'sec-ch-ua-platform': '"Android"',
-        'Origin': 'https://nomorxlku.my.id',
-        'Sec-Fetch-Site': 'same-origin',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Dest': 'empty',
         'Referer': 'https://nomorxlku.my.id/?sc=dd513cfc2ca5b08cbda0ff2a29bdb288',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'
+        'Accept-Encoding': 'gzip, deflate, br'
     },
       body: new URLSearchParams({
          'msisdn': nomor,
