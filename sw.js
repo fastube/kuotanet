@@ -13,7 +13,8 @@ const $caches = [
   "https://i.postimg.cc/pd23ZhDH/icon.png",
   "https://i.postimg.cc/sX2dVQXc/tri.png",
   "https://i.postimg.cc/3Rq6Ytz8/axis.png",
-  "https://i.postimg.cc/hhW57fSN/xl.png"
+  "https://i.postimg.cc/hhW57fSN/xl.png",
+  "https://i.postimg.cc/0jmBKrSr/9c4dfc64-a3da-4ca2-81a6-0f5026f6ce43.png"
 ];
 
 self.addEventListener('install', e => {
