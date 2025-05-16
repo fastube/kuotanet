@@ -115,7 +115,9 @@ function beli(nama, provider) {
       e.preventDefault();
       if (loader.classList.contains("a")) {
          return;
-      }else if(!nama && !yaTitle.classList.contains("a")){
+      }else if (yaTitle.classList.contains("a")) {
+         input.value.length < 6 ? 0 : verif_otp(input.value, nama);
+      }else if(!nama){
         input.value.length < 6 ? 0 : req_otp(input.value,2);
       }else if(!provider.includes("xl")) {
          n();
@@ -123,8 +125,6 @@ function beli(nama, provider) {
          setTimeout(_ => {
             newTab.click();
          }, 10);
-      } else if (yaTitle.classList.contains("a")) {
-         input.value.length < 6 ? 0 : verif_otp(input.value, nama);
       } else {
          input.value.length < 11 ? 0 : cekotp(input.value, nama);
       }
