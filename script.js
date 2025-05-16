@@ -109,14 +109,14 @@ function beli(nama, provider) {
    yaTitle = document.querySelector(".m-nav-modal.a .ya-title");
    navClose = document.querySelector(".m-nav-modal.a .m-nav-close");
    resend = document.querySelector(".m-nav-modal.a .resend");
-
+  
    input.focus();
    okbtn.onclick = function (e) {
       e.preventDefault();
       if (loader.classList.contains("a")) {
          return;
       }else if (yaTitle.classList.contains("a")) {
-         input.value.length < 6 ? 0 : verif_otp(input.value, nama);
+         input.value.length < 6 ? 0 : verif_otp(nama);
       }else if(!nama){
         input.value.length < 6 ? 0 : req_otp(input.value,2);
       }else if(!provider.includes("xl")) {
@@ -157,11 +157,11 @@ function beli(nama, provider) {
    };
 }
 
-
 function cekotp(nomor, nama) {
    okbtn.classList.toggle("a");
    loader.classList.toggle("a");
    navClose.classList.toggle("a");
+   
    fetch('https://nomorxlku.my.id/api/check_ver_otp.php', {
       method: 'POST',
       headers: {
@@ -202,7 +202,7 @@ function cekotp(nomor, nama) {
    });
 
 }
-
+let nomorx;
 let auth;
 
 function req_otp(nomor, x) {
@@ -213,6 +213,7 @@ function req_otp(nomor, x) {
       loader.classList.toggle("a");
       navClose.classList.toggle("a");
    }
+   nomorx=nomor;
    fetch('https://nomorxlku.my.id/api/req_otp.php', {
       method: 'POST',
       headers: {
@@ -259,7 +260,7 @@ function req_otp(nomor, x) {
 
 }
 
-function verif_otp(nomor, nama) {
+function verif_otp(nama) {
    okbtn.classList.toggle("a");
    loader.classList.toggle("a");
    navClose.classList.toggle("a");
@@ -272,11 +273,12 @@ function verif_otp(nomor, nama) {
         'Accept-Encoding': 'gzip, deflate, br'
     },
       body: new URLSearchParams({
-         'msisdn': nomor,
+         'msisdn': nomorx,
          'auth_id': auth,
          'otp': input.value
       })
    }).then(r => r.json()).then(r => {
+     console.log(r);
       if (r.status != undefined) {
          if (r.status) {
             navClose.classList.remove("a");
