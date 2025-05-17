@@ -287,7 +287,7 @@ function verif_otp(nama) {
             if(!nama){
               newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin;
             }else{
-              newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin + "&text=Halo%20Admin,%20Saya%20sudah%20OTP%20nih,%20mau%20order!%0A%0APaket:%20" + nama + "%0ANomor%20Tujuan:%20" + input.value;
+              newTab.href = "https://api.whatsapp.com/send?phone=" + waAdmin + "&text=Halo%20Admin,%20Saya%20sudah%20OTP%20nih,%20mau%20order!%0A%0APaket:%20" + nama + "%0ANomor%20Tujuan:%20" + nomorx;
             }
             setTimeout(_ => {
                newTab.click();

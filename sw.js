@@ -1,4 +1,4 @@
-const $versi = "1.0.05";
+const $versi = "1.0.06";
 const $caches = [
   ".",
   "./index.html",
