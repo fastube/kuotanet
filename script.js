@@ -7,6 +7,12 @@ let resend;
 
 let waAdmin;
 fetch("https://raw.githubusercontent.com/fastube/data/refs/heads/main/kuotanet.json?v=" + new Date().getTime()).then(r => r.json()).then(r => {
+    if(r.maintenance==true){
+      alert("Sedang dalam pemeliharaan / maintenance\n\nSilahkan coba lagi nanti");
+      document.querySelector(".sidepanel--content>div:nth-child(2)").innerHTML = "";
+      document.querySelector(".sidepanel--content>div:nth-child(3)").innerHTML = "";
+      return;
+    }
     document.querySelector(".sidepanel--content>div:nth-child(2)").innerHTML = "";
     document.querySelector(".sidepanel--content>div:nth-child(3)").innerHTML = "";
     waAdmin = r.waAdmin;
