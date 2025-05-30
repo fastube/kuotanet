@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <style>
+      *{
+        margin: 0;padding: 0;
+      }
+      body{
+        position: absolute;
+        top:0;bottom:0;
+        right: 0;left: 0;
+        display: flex;
+      }
+      img{
+        margin: auto;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="a">
+  <script>
+    const queryUrl = window.location.search;
+    const params = new URLSearchParams(queryUrl);
+    document.getElementById("a").src = params.get("url");
+  </script>
+  </body>
+</html>
