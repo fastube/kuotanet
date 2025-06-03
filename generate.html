@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <style>
+      *{
+        margin: 0;padding: 0;
+      }
+      body{
+        position: absolute;
+        top:0;bottom:0;
+        right: 0;left: 0;
+        display: flex;
+      }
+      img,div{
+        margin: auto;
+        width: 90%;
+      }
+      div{
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+      div:after{
+        content:"Anda bisa mengambil screenshot QRIS ini";
+        position: absolute;
+        top: 110%;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="a" alt="">
+    <div id="qris-area"></div>
+  <script>
+    const queryUrl = window.location.search;
+    const params = new URLSearchParams(queryUrl);
+    if(params.get("gambar")){
+      document.getElementById("a").src = params.get("gambar");
+      document.getElementById("qris-area").style.display="none";
+    }else{
+      document.getElementById("a").style.display="none";
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    var qrCode = params.get("qris"); // dari data.qris_data.qr_code
+    new QRCode(document.getElementById("qris-area"), {
+      text: qrCode,
+      width: 310,
+      height: 310,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+  </body>
+</html>
